@@ -1,0 +1,864 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Farvepalette*/
+:root {
+    --primærfarve: #e8e3db;
+    --tekstfarve: #30302F;
+    --sekundærfarve: #CFB676;
+    --mørkfarve: #7E7163;
+    --baggrundsfarve: #fffaf5;
+}
+
+body {
+    background-color: var(--baggrundsfarve);
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+/*MOBIL*/
+/*Menulinjen mobil*/
+header {
+    background-color: var(--primærfarve);
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-family: serif;
+    font-size: 24px;
+    color: var(--tekstfarve);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: var(--tekstfarve);
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    color: #CFB676;
+}
+
+/*Footer mobil*/
+.footer {
+    background-color: var(--primærfarve);
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: large;
+    font-weight: 300;
+}
+
+.ikoner {
+    width: 100%;
+    background-color: var(--primærfarve);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+
+/*FORSIDE mobil*/
+.sections {
+    width: 90%;
+    margin: 20px;
+}
+
+.box1 {
+    width: 100%;
+    height: 200px;
+    border: 3px ridge #CFB676;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.box2 {
+    width: 100%;
+    height: 250px;
+}
+
+.logo {
+    width: 75%;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.box3 {
+    width: 100%;
+    height: 200px;
+}
+
+.portræt-box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.portræt {
+    width: 50%;
+    height: 250px;
+    padding: 30px 10px;
+    border-radius: 15%;
+}
+
+.kompetence-tekst {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 10px;
+    display: flex;
+}
+
+.kompetencer {
+    font-style: normal;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.minknap {
+    color: var(--tekstfarve);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    background-color: var(--sekundærfarve);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.minknap a:active {
+    background-color: antiquewhite;
+}
+
+/*PROJEKTER mobil*/
+.projekter {
+    margin: 40px;
+    max-width: 1100px;
+}
+
+.projekter>div {
+    height: 400px;
+}
+
+.projekter>div>img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.centercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+}
+
+.projekt1 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: var(--sekundærfarve);
+}
+
+.foto1 {
+    width: 100%;
+    height: 250px;
+}
+
+.foto1-tekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.projekt2 {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+    background-color: var(--sekundærfarve);
+}
+
+.foto2 {
+    width: 100%;
+    height: 400px;
+}
+
+.foto2-tekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.projekt3 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: var(--sekundærfarve);
+}
+
+.foto3 {
+    width: 100%;
+    height: 250px;
+}
+
+.foto3-tekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.projekt4 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--sekundærfarve);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projekt4>video {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+}
+
+.videotekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.projekt5 {
+    width: 100%;
+    height: 600px;
+    background-color: var(--sekundærfarve);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.foto4 {
+    width: 100%;
+    height: 550px;
+}
+
+.foto4-tekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.projekt6 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--sekundærfarve);
+}
+
+.foto6 {
+    width: 100%;
+    height: 350px;
+}
+
+.foto6-tekst {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*OM MIG MOBIL*/
+
+.om-mig {
+    margin: 40px;
+}
+
+.om-mig-tekst {
+    width: 100%;
+    height: 500px;
+    border: 3px ridge #CFB676;
+    display: flex;
+    justify-self: center;
+}
+
+.ommig-tekst {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.foto-mig {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 3%;
+}
+
+.kontaktknap {
+    color: var(--tekstfarve);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    background-color: var(--sekundærfarve);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+/*KONTAKTSIDE MOBIL*/
+
+.kontakttekst {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    border: 3px ridge #CFB676;
+    margin: 50px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.kontaktikon {
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kontaktinfo {
+    margin-top: 20px;
+    height: 150px;
+    padding: 20px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: large;
+    font-weight: 300;
+}
+
+.box2logo {
+    width: 70%;
+    margin-left: 20px;
+}
+
+/*TABLET VERSION*/
+@media only screen and (min-width:601px) {
+
+    /*HEADER RESPONSIV*/
+    header .header-brand {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    header nav ul {
+        float: right;
+
+    }
+
+    header nav ul li {
+        display: inline-block;
+        padding: 0 16px;
+
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+    /*FORSIDE RESPONSIV*/
+
+    .sections {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 100px;
+        align-items: center;
+
+    }
+
+    .box1{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .box2 {
+        width: 40%;
+        height: 250px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        object-fit: scale-down;
+
+    }
+
+    .box3 {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+
+    }
+
+    .portræt-box {
+        width: 40%;
+        margin-bottom: 100px;
+    }
+
+    .portræt {
+        width: 100%;
+        height: 400px;
+        object-fit: scale-down;
+
+    }
+
+    /*PROJEKTER RESPONSIV*/
+    .projekter {
+        margin-left: 55px;
+        margin-right: auto;
+    }
+
+    .projekter>div {
+        height: 400px;
+    }
+
+    .projekter>div>img {
+        height: 350px;
+        object-fit: cover;
+    }
+
+
+    .projekt1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .foto1 {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .projekt2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .foto2 {
+        width: 100%;
+    }
+
+
+    .projekt3 {
+        width: 90%;
+        margin-bottom: 20px;
+        background-color: var(--sekundærfarve);
+    }
+
+    .foto3 {
+        width: 100%;
+    }
+
+
+    .projekt4 {
+        width: 90%;
+        background-color: var(--sekundærfarve);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .projekt4 * video {
+        width: 100%;
+        display: flex;
+    }
+
+    .projekt5 {
+        width: 90%;
+        background-color: var(--sekundærfarve);
+        margin-bottom: 20px;
+    }
+
+    .foto4 {
+        width: 100%;
+    }
+
+
+    .projekt6 {
+        width: 90%;
+        background-color: var(--sekundærfarve);
+    }
+
+    .foto6 {
+        width: 100%;
+    }
+
+    /*KONTAKTSIDE RESPONSIV*/
+
+
+    .box2logo {
+        margin-left: 120px;
+    }
+
+    /*OM MIG RESPONSIV*/
+
+    .om-mig-tekst {
+        width: 100%;
+        height: 400px;
+    }
+
+    .om-mig-billede {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-mig {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        margin-top: 40px;
+        border-radius: 3%;
+        object-fit: contain;
+    }
+
+
+    .kontaktknap {
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 40px;
+        margin-left: 0;
+        display: flex;
+
+    }
+
+}
+
+
+/*DESKTOP VERSION*/
+
+
+
+@media only screen and (min-width:960px) {
+
+    /*HEADER RESPONSIV*/
+    header .header-brand {
+        font-size: 30px;
+        margin: 0px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    header nav ul {
+        float: right;
+    }
+
+    header nav ul li {
+        padding: 0 16px;
+    }
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+
+    /*FORSIDE RESPONSIV*/
+
+    .sections {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .box1 {
+        width: 75%;
+    }
+
+    .box2 {
+        width: 40%;
+        height: 250px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    .box3 {
+        height: 200px;
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-left: 150px;
+    
+    }
+
+    .portræt-box {
+        width: 40%;
+        margin-bottom: 100px;
+    }
+
+    .portræt {
+        width: 100%;
+        height: 400px;
+        object-fit: scale-down;
+
+    }
+
+    .minknap {
+        padding: 10px 10px;
+        font-size: 25px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 200px;
+    }
+
+    /*PROJEKTER RESPONSIV*/
+    .projekter {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .projekter>div {
+        height: 400px;
+    }
+
+    .projekter>div>img {
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .projekt1 {
+        width: 40%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .foto1 {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .projekt2 {
+        width: 40%;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+
+    .foto2 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .projekt3 {
+        width: 40%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .foto3 {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .projekt4 {
+        width: 40%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekt4 * video {
+        width: 100%;
+        display: flex;
+    }
+
+    .projekt5 {
+        width: 40%;
+        height: 600px;
+        margin-bottom: 20px;
+    }
+
+    .foto4 {
+        width: 100%;
+        height: 550px;
+    }
+
+
+    .projekt6 {
+        width: 40%;
+        height: 400px;
+    }
+
+    .foto6 {
+        width: 100%;
+        height: 350px;
+    }
+
+    /*KONTAKTSIDE RESPONSIV*/
+
+    .kontakttekst {
+        font-size: 25px;
+    }
+
+    .kontaktikon {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .kontaktinfo {
+        font-size: 25px;
+        margin-left: 10%;
+    }
+
+    .box2logo {
+        margin-top: 100px;
+        margin-left: 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*OM MIG RESPONSIV*/
+
+    .om-mig-indhold {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .om-mig {
+        margin: 40px;
+    }
+
+    .om-mig-tekst {
+        width: 100%;
+        height: 250px;
+        border: 3px ridge #CFB676;
+        display: flex;
+        justify-self: center;
+    }
+
+    .ommig-tekst {
+        width: 100%;
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .om-mig-billede {
+        display: flex;
+        width: 100%;
+    }
+
+    .foto-mig {
+        width: 40%;
+        height: 500px;
+        display: flex;
+        margin-top: 40px;
+        border-radius: 3%;
+        object-fit: contain;
+    }
+
+
+
+    .kontaktknap {
+        font-size: 25px;
+        padding: 10px;
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+
+    }
+
+    /*FOOTER RESPONSIV*/
+
+    .footer {
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+
+    .ikoner {
+        width: 100%;
+        background-color: var(--primærfarve);
+        display: flex;
+        justify-content: right;
+        padding-bottom: 10px;
+    }
+
+
+
+
+}
